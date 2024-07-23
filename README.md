@@ -7,6 +7,7 @@
 <p align="center">
  <a href="#sobre-o-projeto">Sobre</a> •
  <a href="#funcionalidades">Funcionalidades</a> •
+ <a href="#layout">Layout</a> •
  <a href="#como-executar-o-projeto">Como executar</a> • 
  <a href="#tecnologias">Tecnologias</a> •  
  <a href="#protótipo-figma">Protótipo (Figma)</a> •  
@@ -49,13 +50,13 @@ Projeto desenvolvido para atender ao MVP da disciplina de Front End Avançado (P
 ## Layout
 
 <div align="center">
-    <img alt="Hemo - Home" title="Hemo" src="./src/assets/img/home.png" width="550" />
-    <img alt="Hemo - Home" title="Hemo" src="./src/assets/img/hemo_full.png" width="550" />
+    <img alt="Hemo - Home" title="MedCare Home" src="./templates/static/geral/images/MedCare_HOME.png" width="550" />
+    <img alt="Hemo - Home" title="MedCare Contato" src="./templates/static/geral/images/MedCare_CONTATO.png" width="550" />
 </div>
 
 <div align="center">
-    <img alt="Hemo - Listar doadores" title="Hemo" src="./src/assets/img/hemo_doadores_list.png" width="550" />
-    <img alt="Hemo - adicionar hemocentro" title="Hemo" src="./src/assets/img/hemo_add_hemocentro.png" width="550" />
+    <img alt="Hemo - Home" title="MedCare Home" src="./templates/static/geral/images/MedCare_Dados.png" width="550" />
+    <!-- <img alt="Hemo - Home" title="MedCare Contato" src="./templates/static/geral/images/MedCare_CONTATO.png" width="550" /> -->
 </div>
 
 
@@ -67,21 +68,38 @@ Certifique-se de ter o [Nodejs, ou o npm,](https://nodejs.org/en/download/) inst
 
 ## Como executar o projeto
 
-Após clonar o repositório, é necessário ir ao diretório raiz desse projeto pelo terminal para poder executar os comandos descritos abaixo.
+
+Será necessário ter todas as libs python listadas no `requirements.txt` instaladas.
+Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
+
+> É fortemente indicado o uso de ambientes virtuais do tipo [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html).
 
 ```
-$ npm install
+(env)$ pip install -r requirements.txt
 ```
 
-Este comando instala as dependências/bibliotecas, descritas no arquivo `package.json`. Uma pasta chamada `node_modules` será criada.
+Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
-Para executar a interface basta executar o comando: 
+
+#### Executando o servidor
+
+
+Para executar:
 
 ```
-$ npm start
+(env)$ python manage.py runserver 
 ```
 
-Abra o [http://localhost:3000/#/](http://localhost:3000/#/) no navegador.
+
+#### Acesso no browser (Web)
+Abra o [http://localhost:8000](http://localhost:8000) no navegador para visualizar.
+
+
+#### Acesso no browser (API)
+Abra o [http://localhost:8000/api/v1/swagger/](http://localhost:8000/api/v1/swagger/) no navegador para verificar o status da API em execução.
+
+
+
 
 
 ##  Tecnologias
