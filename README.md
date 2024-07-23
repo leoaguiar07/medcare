@@ -31,9 +31,32 @@ Projeto desenvolvido para atender ao MVP da disciplina de Front End Avançado (P
 
 - [x] Busca por médicos: 
   - [x] listar médicos buscando por nome
-  - [x] listar médicos buscando por localidade
+  - [x] listar médicos buscando por cidade
+  - [x] listar médicos buscando por especialidade
+- [x] Cadastro de médicos: 
+  - [ ] cadastrar horários de atendimento
+  - [ ] cadastrar perfil
+    - [ ] receber e-mail para ativação da conta
+    - [ ] receber SMS/Whatsapp para confirmação do celular
+  - [x] listar médicos buscando por cidade
+  - [x] listar médicos buscando por especialidade
+- [ ] Cadastro de usuários/pacientes: 
+  - [ ] receber e-mail para ativação da conta
+  - [ ] receber SMS/Whatsapp para confirmação do celular
 
 
+
+## Layout
+
+<div align="center">
+    <img alt="Hemo - Home" title="Hemo" src="./src/assets/img/home.png" width="550" />
+    <img alt="Hemo - Home" title="Hemo" src="./src/assets/img/hemo_full.png" width="550" />
+</div>
+
+<div align="center">
+    <img alt="Hemo - Listar doadores" title="Hemo" src="./src/assets/img/hemo_doadores_list.png" width="550" />
+    <img alt="Hemo - adicionar hemocentro" title="Hemo" src="./src/assets/img/hemo_add_hemocentro.png" width="550" />
+</div>
 
 
 ## Pré-requisitos
@@ -65,16 +88,16 @@ Abra o [http://localhost:3000/#/](http://localhost:3000/#/) no navegador.
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+#### **Web**
+[![My Skills](https://skillicons.dev/icons?i=django,postgres,js,css,bootstrap,html&perline=3)](https://skillicons.dev)
 
-[![My Skills](https://skillicons.dev/icons?i=react,bootstrap,figma&perline=3)](https://skillicons.dev)
+#### **API**
+[![My Skills](https://skillicons.dev/icons?i=django&perline=4)](https://skillicons.dev)
 
 #### **Utilitários**
 
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+[![My Skills](https://skillicons.dev/icons?i=vscode,postman,&perline=4)](https://skillicons.dev)
 
-##  Protótipo Figma
-
--   Protótipo:  *[https://www.figma.com/design/0B1kaf7T95qP6CCJlSgb3i/Medcare?node-id=0-1&t=PQxPQ9tr661KFsS6-1](https://www.figma.com/design/0B1kaf7T95qP6CCJlSgb3i/Medcare?node-id=0-1&t=PQxPQ9tr661KFsS6-1)*
 ## Autor
 
  <img src="https://avatars.githubusercontent.com/u/131842850?v=4" alt="@leoaguiar07" size="100" height="100" width="100" data-view-component="true" class="avatar circle" style="border-radius: 50%;">
