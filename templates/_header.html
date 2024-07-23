@@ -1,0 +1,100 @@
+{% load static %}
+<header>
+    <!-- start navigation -->
+    <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
+      <div class="container-fluid">
+        <div class="col-auto col-lg-2 me-lg-0 me-auto">
+          <a class="navbar-brand" href="{% url 'doctor_list' %}">
+            <img
+              src="{% static 'geral/images/demo-medical-logo-black.png' %}"
+              data-at2x="{% static 'geral/images/demo-medical-logo-black@2x.png' %}"
+              alt=""
+              class="default-logo"
+            />
+            <img
+              src="{% static 'geral/images/demo-medical-logo-black.png' %}"
+              data-at2x="{% static 'geral/images/demo-medical-logo-black@2x.png' %}"
+              alt=""
+              class="alt-logo"
+            />
+            <img
+              src="{% static 'geral/images/demo-medical-logo-black.png' %}"
+              data-at2x="{% static 'geral/images/demo-medical-logo-black@2x.png' %}"
+              alt=""
+              class="mobile-logo"
+            />
+          </a>
+        </div>
+        <div class="col-auto col-lg-8 menu-order position-static">
+          <button
+            class="navbar-toggler float-start"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
+            <span class="navbar-toggler-line"></span>
+          </button>
+          <div  class="collapse navbar-collapse justify-content-center" id="navbarNav" >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="{% url 'dados' %}" class="nav-link"
+                  >Segurança dos dados</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'contato' %}"  class="nav-link"
+                    >Contato</a
+                  >
+                </li>
+                {% if not user.is_authenticated %}
+              <li class="nav-item">
+                <a href="{% url 'login' %}" class="nav-link">Entrar</a>
+              </li>
+              {% endif %}
+              
+              <li class="nav-item">
+            </ul>
+            
+                  {% if user.is_authenticated %}
+                    <!-- INÍCIO Logado -->
+                    <div class="dropdown">
+                      <button class="btn btn-very-small dropdown-toggle btn-base-color btn-round-edge btn-box-shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Minha conta
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Configurações da conta</a>
+                        <a class="dropdown-item" href="#">Minhas consultas</a>
+                        {% comment %} <a class="dropdown-item" href="{% url 'logout' %}">Sair</a> {% endcomment %}
+                        <form method="post" action="{% url 'logout' %}">
+                          {% csrf_token %}
+                          <button  class="dropdown-item" type="submit">Sair</button>
+                      </form>
+                      </div>
+                    </div>
+                    <!-- FIM Logado -->
+                  {% else %}
+                    <!-- Não logado -->
+                    <div class="dropdown">
+                      <button class="btn btn-very-small dropdown-toggle btn-base-color btn-round-edge btn-box-shadow" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Criar perfil gratuito
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{% url 'signup' %}">Paciente</a>
+                        <a class="dropdown-item" href="{% url 'signup_specialist' %}">Especialista</a>
+                        <a class="dropdown-item" href="{% url 'signup' %}">Clínica</a>
+                      </div>
+                    </div>
+                    {% endif %}
+                    
+
+          </div>
+        </div>
+      </li>
+       
+    </nav>
+    <!-- end navigation -->
+  </header>

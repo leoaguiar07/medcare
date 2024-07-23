@@ -1,0 +1,49 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %}
+
+  <body data-mobile-nav-style="classic">
+    
+
+    <section>
+      <div class="container mt-5">
+        <div class="row g-0 justify-content-center">
+            
+          <div
+            class="col-lg-6 col-md-10 offset-xl-2 offset-lg-1 p-6 box-shadow-extra-large border-radius-6px"
+            data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay":150, "staggervalue": 150, "easing": "easeOutQuad" }'
+          >
+            <span
+              class="fs-26 xs-fs-24 alt-font fw-600 text-dark-gray mb-20px d-block"
+              >Entrar</span
+            >
+            <form method="post">
+              
+                {% csrf_token %}
+                {{ form.as_table }}
+              
+              <input type="hidden" name="redirect" value />
+              <button
+                class="btn btn-medium btn-round-edge mt-5 btn-base-color btn-box-shadow w-100 text-transform-none"
+                type="submit"
+              >
+                Login
+              </button>
+              <div class="form-results mt-20px d-none"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="scroll-progress d-none d-xxl-block">
+      <a href="#" class="scroll-top" aria-label="scroll">
+        <span class="scroll-text">Scroll</span
+        ><span class="scroll-line"><span class="scroll-point"></span></span>
+      </a>
+    </div>
+
+  </body>
+  {% endblock %}

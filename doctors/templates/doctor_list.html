@@ -1,0 +1,374 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+
+{% block content %}
+<div data-mobile-nav-style="classic">
+ 
+    <!-- start page title -->
+    <section id="top"
+      class="top-space-margin page-title-big-typography cover-background overflow-hidden position-relative p-0 lg-no-border-radius"
+      style="background-image: url({% static 'geral/images/demo-medical-doctors-title-bg.jpg)' %}">
+      <div class="container">
+        <div class="row small-screen">
+          <div
+            class="col-xl-5 col-lg-6 col-md-7 position-relative page-title-extra-large align-self-center"
+            data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+          >
+       
+          <h1 class="text-dark-gray fw-800 ls-minus-3px sm-ls-minus-1px d-block mb-0">
+            melhor parceiro de saúde. 
+            <span class="d-inline-block bg-golden-yellow text-white border-radius-3px ps-10px pe-10px fs-13 ls-minus-1px lh-28 me-10px md-me-5px sm-me-10px align-middle align-bottom-right">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </span>
+          </h1>       
+              
+
+            
+          </div>
+          <div
+            class="col-xl-7 col-lg-6 col-md-5 position-relative d-none d-md-block"
+          >
+            <div
+              class="w-85px h-85px border-radius-100 d-flex align-items-center justify-content-center position-absolute left-100px lg-left-minus-20px md-left-minus-30px top-100px lg-top-140px md-top-100px mt-4 translate-middle-y"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end page title -->
+    <section id= "" class="py-0">
+      <div
+        class="container overlap-section sm-pt-50px"
+        style="margin-top: inherit"
+      >
+        <div
+          class="bg-base-color border-radius-6px pt-4 pb-4 ps-6 pe-6 xl-p-4 sm-p-30px appear anime-complete"
+          data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'
+          style=""
+        >
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-3 lg-mb-25px text-center text-xl-start">
+              <h6 class="text-white fw-700 mb-0 w-100 xl-w-100">
+                Ache o melhor
+                <span
+                  class="highlight-separator shadow-in"
+                  data-shadow-animation="true"
+                  data-animation-delay="500"
+                  >médico
+                  <span
+                    ><img
+                      src="{% static 'geral/images/highlight-separator.svg' %}"
+                      alt=""
+                      data-no-retina="" /></span
+                ></span>
+                para você.
+              </h6>
+            </div>
+            <div class="col-xl-9">
+              <div
+                class="row row-cols-auto row-cols-lg-3 row-cols-md-2 justify-content-center align-items-center"
+              >
+                <div
+                  class="col process-step-style-07 position-relative md-mb-30px"
+                >
+                  <div class="process-step-item d-flex align-items-center">
+                    <div class="process-step-icon-wrap position-relative">
+                      <div
+                        class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px border border-1 border-color-transparent-white-very-light box-shadow-bottom"
+                      >
+                        <span
+                          class="number position-relative z-index-1 text-white fw-500"
+                          >01</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="process-content ps-10px last-paragraph-no-margin"
+                    >
+                      <span class="d-block fw-600 text-white fs-18"
+                        >Busque o médico</span
+                      >
+                      <p class="text-white opacity-7">
+                        {{doctors_count}} especialistas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col process-step-style-07 position-relative md-mb-30px"
+                >
+                  <div class="process-step-item d-flex align-items-center">
+                    <div class="process-step-icon-wrap position-relative">
+                      <div
+                        class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px border border-1 border-color-transparent-white-very-light box-shadow-bottom"
+                      >
+                        <span
+                          class="number position-relative z-index-1 text-white fw-500"
+                          >02</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="process-content ps-10px last-paragraph-no-margin"
+                    >
+                      <span class="d-block fw-600 text-white fs-18"
+                        >Verifique a agenda</span
+                      >
+                      <p class="text-white opacity-7">Melhores horários</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col process-step-style-07 position-relative">
+                  <div class="process-step-item d-flex align-items-center">
+                    <div class="process-step-icon-wrap position-relative">
+                      <div
+                        class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px border border-1 border-color-transparent-white-very-light box-shadow-bottom"
+                      >
+                        <span
+                          class="number position-relative z-index-1 text-white fw-500"
+                          >03</span
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="process-content ps-10px last-paragraph-no-margin"
+                    >
+                      <span class="d-block fw-600 text-white fs-18">Marque a consulta</span>
+                      <p class="text-white opacity-7">Receba confirmação</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- start section -->
+    <section id="cards" class="position-relative" id="appointment">
+      <div class="container">
+        <div
+          class="row justify-content-center appear anime-complete"
+          data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 50, "staggervalue": 150, "easing": "easeOutQuad" }'
+          style=""
+        >
+          <div class="col-xl-4 col-lg-5 md-mb-50px">
+            <h3 class="fw-800 text-dark-gray ls-minus-2px">
+              Busque especialistas.
+
+            </h3>
+
+            <div class="row g-0 align-items-center"></div>
+          </div>
+          <div class="col-xl-8 col-lg-7">
+            <div class="contact-form-style-05">
+              <form method="get" action="{% url 'doctor_list' %}">
+                <div class="row justify-content-center">
+                  <div class="col-md-6 sm-mb-25px">
+                    <div class="mb-25px select">
+                      <select
+                        class="form-control"
+                        aria-label="select-doctor"
+                        name="specialties"
+                        value="{{request.GET.specialties}}"
+                        id="especialidades"
+                      >
+                        <option value="">Especialidades</option>
+                        {% for i in specialties %}
+                        <option value="{{ i.name }}">{{ i.name }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+                    <input
+                      class="mb-25px form-control"
+                      type="text"
+                      placeholder="Nome"
+                      name="name"
+                      value="{{ request.GET.name }}"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-25px select">
+                      <select
+                        class="form-control"
+                        aria-label="select-doctor"
+                        name="city"
+                        value="{{request.GET.state}}"
+                        id="estado"
+                      >
+                        <option value="">Cidade</option>
+                        {% for state in states %}
+                        <option value="{{ state.city }}">
+                          {{ state.city }}
+                        </option>
+                        {% endfor %}
+                      </select>
+                    </div>
+
+                    <div class="text-center text-md-end mt-25px sm-mt-20px">
+                      <button
+                        class="btn btn-medium btn-base-color btn-round-edge left-icon btn-box-shadow"
+                        type="submit"
+                      >
+                        <i class="bi bi-search"></i>Pesquisar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+
+    <section
+      class="bg-light-turquoise-blue border-radius-8px lg-no-border-radius overlap-height position-relative pb-0"
+    >
+      <div
+        class="position-absolute top-10px lg-top-minus-80px left-minus-80px lg-left-15px opacity-1 w-350px z-index-1 d-none d-lg-inline-block"
+      >
+        <img
+          src="{% static 'geral/images/demo-medical-pattern.svg' %}"
+          alt=""
+          data-bottom-top="transform: translateY(-50px)"
+          data-top-bottom="transform: translateY(50px)"
+        />
+      </div>
+      <div class="container overlap-gap-section position-relative z-index-1">
+        <div class="row mb-4">
+          <div
+            class="col text-center"
+            data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+          >
+            <h2 class="fw-800 text-dark-gray ls-minus-2px">
+              Conheça nossos médicos
+            </h2>
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-sm-2 justify-content-center"
+          data-anime='{"el": "childs", "translateY": [15, 0], "perspective": [1200,1200], "scale": [1.05, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'
+        >
+          <!-- start team member item -->
+          {% for doctor in doctors %}
+          <div class="col team-style-06 mb-30px">
+            <div
+              class="d-flex flex-column p-35px pb-20px lg-p-30px text-center border-radius-6px bg-white box-shadow-quadruple-large position-relative"
+            >
+              <div class="position-relative">
+                <a href="{% url 'doctor_detail' doctor.pk %}" class="d-inline-block position-relative">
+                  {% if doctor.photo %}
+                  <img
+                    class="rounded-circle w-150px h-150px mb-20px"
+                    src="{{doctor.photo.url}}"
+                    alt="{{doctor.greet}} {{ doctor.name }} {{doctor.last_name}}"
+                  />
+                  {% else %}
+                  <img
+                    class="rounded-circle w-150px h-150px mb-20px"
+                    src="{% static 'geral/images/user_200x200.png' %}"
+                    alt=""
+                  />
+                  {% endif %}
+
+              </div>
+              <a href="{% url 'doctor_detail' doctor.pk %}" class="text-dark-gray fs-18 fw-500 mb-5px"
+                >{{doctor.greet}} {{doctor.name}} {{doctor.last_name}}</a>
+                <div class="d-inline-block position-relative">
+                <span class="d-inline-block text-golden-yellow border-radius-3px ps-10px pe-10px fs-7 ls-minus-1px lh-28 me-10px md-me-5px sm-me-10px align-middle align-bottom-right">
+                  {% for star in doctor.stars %}
+                    {% if star == 'filled' %}
+                      <i class="bi bi-star-fill"></i>
+                    {% else %}
+                      <i class="bi bi-star"></i>
+                    {% endif %}
+                  {% endfor %}
+                </span>
+                <span class="w-90 mx-auto lh-28">
+
+                  {{ doctor.evaluation_count }} opiniões
+               
+                  {% comment %} 156 opiniões {% endcomment %}
+                </span>
+              </div>
+              <span class="w-90 mx-auto lh-28"
+                >{{doctor.specialty}} ({{doctor.cr}})</span
+              >
+
+              {% comment %} {% for address in address %}
+              <span class="w-90 mx-auto lh-28"
+                >{{address.address}}, {{address.city}}</span
+              >
+
+              {% endfor %} {% endcomment %} 
+              {% for address in addresses %} 
+                {% if address.doctor_id == doctor.id %} 
+                  {{ address.address }}, {{address.city }} 
+                
+
+              <a
+                class="text-muted"
+                data-test-id="address-map-link"
+                href="{{ address.maps_link }}"
+                rel="noreferrer"
+                target="_blank"
+              >
+
+                <u>Mapa</u>
+              </a>
+              {% endif %} 
+              {% endfor %}
+              <div
+                class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px"
+              >
+                <span class="w-90 mx-auto lh-28"
+                  >Consulta a partir de R$ {{doctor.price}}</span
+                >
+
+                {% if doctor.tele_consultation %}
+                <span class="w-90 mx-auto lh-28"
+                  >Teleconsulta a partir de R$ {{doctor.price_tele}}</span
+                >
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- end team member item -->
+
+          {% comment %} <h2>Welcome, {{ user.email }}</h2> {% endcomment %}
+          {% comment %} <p><a href="{% url 'logout' %}">Logout</a></p>
+          <p><a href="{% url 'profile_update' %}">Update Profile</a></p> {% endcomment %}
+
+        </div>
+        {% include '_pagination.html' %}
+        <div
+          class="row justify-content-center align-items-center pt-3 pb-6"
+          data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
+        ></div>
+      </div>
+    </section>
+
+
+  
+  <!-- start scroll progress -->
+  <div class="scroll-progress d-none d-xxl-block">
+    <a href="#" class="scroll-top" aria-label="scroll">
+      <span class="scroll-text">Scroll</span
+      ><span class="scroll-line"><span class="scroll-point"></span></span>
+    </a>
+  </div>
+  <!-- end scroll progress -->
+</div>
+
+{% endblock %}

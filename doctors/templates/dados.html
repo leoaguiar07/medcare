@@ -1,0 +1,141 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block content %}
+
+    <body data-mobile-nav-style="classic">
+        <div class="box-layout">  
+           
+            
+            <!-- start section -->
+            <section class="py-0">
+                <div class="container overlap-section sm-pt-50px">
+                    <div class="bg-base-color border-radius-6px  pt-4 pb-4 ps-6 pe-6 xl-p-4 sm-p-30px " data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>  
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-xl-3 lg-mb-25px text-center text-xl-start">
+                                <h6 class="text-white fw-700 mb-0 w-80 xl-w-100">Find the right <span class="highlight-separator" data-shadow-animation="true" data-animation-delay="500">doctor <span><img src="images/highlight-separator.svg" alt=""></span></span> for you.</h6>
+                            </div>
+                            <div class="col-xl-9">
+                                <div class="row row-cols-auto row-cols-lg-3 row-cols-md-2 justify-content-center align-items-center">
+                                    <!-- start process step item -->
+                                    <div class="col process-step-style-07 position-relative md-mb-30px">
+                                        <div class="process-step-item d-flex align-items-center">
+                                            <div class="process-step-icon-wrap position-relative">
+                                                <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px border border-1 border-color-transparent-white-very-light box-shadow-bottom">
+                                                    <span class="number position-relative z-index-1 text-white fw-500">01</span>
+                                                </div>  
+                                            </div>
+                                            <div class="process-content ps-20px last-paragraph-no-margin">
+                                                <span class="d-block fw-600 text-white fs-18">Search doctor</span>
+                                                <p class="text-white opacity-7">Lorem sit printing</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <!-- end process step item --> 
+                                    <!-- start process step item -->
+                                    <div class="col process-step-style-07 position-relative md-mb-30px">
+                                        <div class="process-step-item d-flex align-items-center">
+                                            <div class="process-step-icon-wrap position-relative">
+                                                <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px border border-1 border-color-transparent-white-very-light box-shadow-bottom">
+                                                    <span class="number position-relative z-index-1 text-white fw-500">02</span>
+                                                </div>  
+                                            </div>
+                                            <div class="process-content ps-20px last-paragraph-no-margin">
+                                                <span class="d-block fw-600 text-white fs-18">Book schedule</span>
+                                                <p class="text-white opacity-7">Lorem sit printing</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <!-- end process step item --> 
+                                    <!-- start process step item -->
+                                    <div class="col process-step-style-07 position-relative">
+                                        <div class="process-step-item d-flex align-items-center">
+                                            <div class="process-step-icon-wrap position-relative">
+                                                <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-70px w-70px border border-1 border-color-transparent-white-very-light box-shadow-bottom">
+                                                    <span class="number position-relative z-index-1 text-white fw-500">03</span>
+                                                </div>  
+                                            </div>
+                                            <div class="process-content ps-20px last-paragraph-no-margin">
+                                                <span class="d-block fw-600 text-white fs-18">Make a payment</span>
+                                                <p class="text-white opacity-7">Lorem sit printing</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <!-- end process step item --> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center ps-10 pe-10 pt-7 pb-7 md-ps-0 md-pe-0 border-radius-8px overflow-hidden position-relative">  
+                        {% comment %} <div class="position-absolute right-70px md-right-0px top-minus-20px w-250px xs-w-200px opacity-2"><img src="https://via.placeholder.com/237x236" alt=""></div> {% endcomment %}
+                        <div class="col-12">
+                            {% comment %} <span class="fs-18 fw-600 text-dark-gray mb-20px d-flex align-items-center"><span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px"><i class="bi bi-question-circle text-base-color fs-20"></i></span>Basic information for patients</span>  {% endcomment %}
+                            <h4 class="fw-800 text-dark-gray ls-minus-2px">Os seus dados e os dados dos seus pacientes estão seguros.</h4>
+                            <div class="accordion accordion-style-02" id="accordion-style-02" data-active-icon="icon-feather-minus" data-inactive-icon="icon-feather-plus">
+                                <!-- start accordion item -->
+                                <div class="accordion-item active-accordion">
+                                    <div class="accordion-header border-bottom border-color-transparent-dark-very-light">
+                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-01" aria-expanded="true" data-bs-parent="#accordion-style-02">
+                                            <div class="accordion-title mb-0 position-relative text-dark-gray">
+                                                <i class="feather icon-feather-minus fs-20"></i><span class="fw-600 fs-18">Os seus dados estão protegidos com Amazon Web Service</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="accordion-style-02-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-style-02">
+                                        <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent-dark-very-light">
+                                            <p class="w-90 md-w-100"><p>Utilizamos os sistemas de base de dados mais importantes e credíveis do mercado para garantir que os seus dados e as informações dos seus pacientes estejam criptografados e 100% seguros.<p/>
+                                                Ao mesmo tempo, o armazenamento dos seus dados na cloud permite-lhe ter acesso de qualquer lugar e de qualquer dispositivo, impedindo a perda ou roubo destes dados, além de bloquear acessos não autorizados. Com o Amazon Web Service, os seus dados estão protegidos por firewall e por backups constantes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordion item -->
+                                <!-- start accordion item -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header border-bottom border-color-transparent-dark-very-light">
+                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-02" aria-expanded="false" data-bs-parent="#accordion-style-02">
+                                            <div class="accordion-title mb-0 position-relative text-dark-gray">
+                                                <i class="feather icon-feather-plus fs-20"></i><span class="fw-600 fs-18">Criptografado, mas acessível ...</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="accordion-style-02-02" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
+                                        <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent-dark-very-light">
+                                            <p class="w-90 md-w-100">Todos os seus dados são protegidos com uma criptografia de 256 bits e estão seguros de qualquer acesso não autorizado. No entanto, graças ao serviço de cloud do Amazon Web Service, pode aceder aos seus dados em qualquer local e de qualquer dispositivo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordion item -->
+                                <!-- start accordion item -->
+                                <div class="accordion-item">
+                                    <div class="accordion-header border-bottom border-color-transparent">
+                                        <a href="#" data-bs-toggle="collapse" data-bs-target="#accordion-style-02-03" aria-expanded="false" data-bs-parent="#accordion-style-02">
+                                            <div class="accordion-title mb-0 position-relative text-dark-gray">
+                                                <i class="feather icon-feather-plus fs-20"></i><span class="fw-600 fs-18">Úteis, mas responsáveis ...</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="accordion-style-02-03" class="accordion-collapse collapse" data-bs-parent="#accordion-style-02">
+                                        <div class="accordion-body last-paragraph-no-margin border-bottom border-color-transparent">
+                                            <p class="w-90 md-w-100">Estamos orgulhosos pela maneira como ajudamos pacientes e especialistas a ter uma experiência de saúde mais humana. Contudo, nunca enviaremos promoções indesejadas para os seus pacientes. Somente os que solicitarem receberão as nossas promoções.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end accordion item -->
+                            </div>
+                            
+                        </div>
+                        <span class="fs-18 fw-600 text-dark-gray mt-20px d-flex align-items-center"><span class="text-center w-60px h-60px d-flex justify-content-center align-items-center rounded-circle bg-light-sea-green-transparent-light align-middle me-15px"><i class="bi bi-question-circle text-base-color fs-20"></i></span>Ainda tem dúvidas sobre segurança de dados?&nbsp;<a href="{% url 'contato' %}">Fale conosco</a>.</span> 
+                    </div> 
+                </div>
+            </section> 
+            <!-- end section -->
+           
+            <!-- end footer -->
+           
+        </div>
+        
+    
+    </body>
+{% endblock %}

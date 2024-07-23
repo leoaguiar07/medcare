@@ -1,0 +1,29 @@
+/* pagination.css */
+
+/* Estilo dos links de paginação */
+.pagination .page-link {
+    color: #18BCC7; /* Cor do texto dos links */
+    background-color: #EDF9FA; /* Cor de fundo dos links */
+    border: 1px solid #18BCC7; /* Cor da borda dos links */
+}
+
+/* Estilo dos links de paginação ao passar o mouse */
+.pagination .page-link:hover {
+    color: #004A77; /* Cor do texto dos links ao passar o mouse */
+    background-color: #EDF9FA;  /* Cor de fundo dos links ao passar o mouse */
+    border-color: #18BCC7; /* Cor da borda dos links ao passar o mouse */
+}
+
+/* Estilo do item de página ativo */
+.pagination .page-item.active .page-link {
+    color: #fff; /* Cor do texto do item ativo */
+    background-color: #18BCC7; /* Cor de fundo do item ativo */
+    border-color: #18BCC7; /* Cor da borda do item ativo */
+}
+
+/* Estilo do item de página desativado */
+.pagination .page-item.disabled .page-link {
+    color: #6c757d; /* Cor do texto do item desativado */
+    background-color: #fff; /* Cor de fundo do item desativado */
+    border-color: #dee2e6; /* Cor da borda do item desativado */
+}
